@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout4-3.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<a class="go-up" href="#">
+			<i class="icon-angle-circled-up"></i>
+		</a>
+		<div class="pop-screen" id="pop-screen">
+			<span class="cancel">×</span>
+			<ul class="pop-ul">
+				<li><a href="#">首頁</a></li>
+				<li><a href="#">國際檢定</a></li>
+				<li><a href="#">課程類別</a></li>
+				<li><a href="#">排課系統</a></li>
+				<li><a href="#">預約諮詢</a></li>
+			</ul>
+		</div>
+		<!-- banner -->
+		<div class="bd-example">
+		  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		    <ol class="carousel-indicators">
+		      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+		      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+		      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+		    </ol>
+		    <div class="carousel-inner">
+		      <div class="carousel-item active">
+		        <div class="out-img">
+		        	<div class="inner-img">
+		        		<img src="images/banner-1.png" class="d-block w-100" alt="">
+		        	</div>
+		      	</div>	
+		        <div class="carousel-caption d-md-block banner-text  wow bounceInLeft">
+		          <h5 class="banner-text-white">多益575到900<br>超強單字記憶連結法</h5>
+		          <p class="banner-text-white">多益滿分同學狂推！一眼輕鬆看出同義代換字、學會推論單字的意思</p>
+		          <div class="banner-a">
+		          	<a href="#">立即了解</a>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="carousel-item">
+		      	<div class="out-img">
+		        	<div class="inner-img">
+		        		<img src="images/banner-2.jpg" class="d-block w-100" alt="">
+		        	</div>
+		      	</div>	
+		        <div class="carousel-caption d-md-block banner-text  wow bounceInLeft">
+		          <h5 class="banner-text-white">6週全面突破新多益<br>全新課程大優惠！</h5>
+		          <p class="banner-text-white">倒數時刻，你需要分秒必爭！6週密集實戰真題機經、考點分析猜題<br>為每位同學客製專屬備考計畫，報名再享好書4選1（數量有限，送完為止）</p>
+		          <div class="banner-a">
+		          	<a href="#">搶先登記</a>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="carousel-item">
+		        <div class="out-img">
+		        	<div class="inner-img">
+		        		<img src="images/banner-3.jpg" class="d-block w-100" alt="">
+		        	</div>
+		      	</div>	
+		        <div class="carousel-caption d-md-block banner-text wow bounceInLeft">
+		          <h5 class="banner-text-white">2019 TOEIC<br>多益官方線上報名</h5>
+		          <p class="banner-text-white">Test of English for International Communication<br>多益考了沒？畢業求職、升遷加薪必備條件，打破22K魔咒就靠這一張！</p>
+		          <div class="banner-a">
+		          	<a href="#">搶先報名</a>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+		      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+		      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div>
+		</div>
+		<!-- header -->
+		<div class="header">
+			<div class="header-bg"></div>
+			<div class="container u-clearfix">
+				<div class="logo">
+						<div class="logo-inner" href="#"></div>
+				</div>
+
+				<ul class="navbar fr">
+					<li>
+						<a href="#" class="active">首頁</a>
+					</li>
+					<li>
+						<a href="#">國際檢定</a>
+					</li>
+					<li>
+						<a href="#">課程類別</a>
+					</li>
+					<li>
+						<a href="#">排課系統</a>	
+					</li>
+					<li>
+						<a href="#">預約諮詢</a>
+					</li>
+					<li class="search-li">
+						<i class="icon-search search-size search-i s-a1"></i>
+						<div class="search-box"></div>
+						<form action="#">
+							<input type="text" class="search-text" placeholder="請輸入關鍵字">
+							<i class="icon-search search-size search-i s-a2">
+								<button class="search-btn"></button>
+							</i>					
+						</form>
+					</li>
+					<a href="#" class="pop-up"><i class="icon-menu icon-size"></i></a>
+				</ul>
+
+			</div>
+		</div>
+		
+		<!-- 簡介 -->
+		<div class="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-12 col-md-6">
+						<div class="time">
+							<h1 class="time-bigtitle">TIME</h1><hr>
+							<h2 class="time-title">課程規劃</h2>
+							<div class="time-img">
+								<img src="https://picsum.photos/400/400?grayscale" alt="">
+							</div>
+							<p class="time-note">菁英國際比您更了解自己，提供最適合學員能力的學習方案。經過多年的數據分析和應試規劃，為不同程度英文學習者量身打造學習清單與進度，協助您鎖定目標，有效達標。</p>
+							<a class="time-btn" href="#">詳細了解</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-12 col-md-6">
+						<div class="time">
+							<h1 class="time-bigtitle">TACTICS</h1><hr>
+							<h2 class="time-title">教學策略</h2>
+							<div class="time-img">
+								<img src="https://picsum.photos/400/400?grayscale" alt="">
+							</div>
+							<p class="time-note">菁英國際比您更了解自己，提供最適合學員能力的學習方案。經過多年的數據分析和應試規劃，為不同程度英文學習者量身打造學習清單與進度，協助您鎖定目標，有效達標。</p>
+							<a class="time-btn" href="#">詳細了解</a>
+						</div>
+					</div> 
+					<div class="col-xl-3 col-12 col-md-6">
+						<div class="time">
+							<h1 class="time-bigtitle">SYSTEM</h1><hr>
+							<h2 class="time-title">排課系統</h2>
+							<div class="time-img">
+								<img src="https://picsum.photos/400/400?grayscale" alt="">
+							</div>
+							<p class="time-note">單與進度，協助您鎖單與進度，協助您鎖單與進度，協助您鎖單與進度，協助您鎖單與進度，協助您鎖單與進度，協助您鎖</p>
+							<a class="time-btn" href="#">詳細了解</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-12 col-md-6">
+						<div class="time">
+							<h1 class="time-bigtitle">LOCATION</h1><hr>
+							<h2 class="time-title">共享據點</h2>
+							<div class="time-img">
+								<img src="https://picsum.photos/400/400?grayscale" alt="">
+							</div>
+							<p class="time-note">菁英國際比您更了解自己，提供最適合學員能力的學習方案。經過多年的數據分析和應試規劃，為不同程度英文學習者量身打造學習清單與進度，協助您鎖定目標，有效達標。</p>
+							<a class="time-btn" href="#">詳細了解</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 精選課程 -->
+		<div class="subject pt-30 pb-50 mt-60">
+			<div class="container">
+				<h2>為你量身打造課程</h2>
+				<div class="row">
+						<div class="sub-group col-lg-4 mb-50">
+							<h1 class="subject-title">養成系列</h1>
+							<div class="subject-list">
+									<h3>基礎聽力養成</h3>
+									<p class="subject-slide">
+										運用12個多益必考情境，學習分辨英語連音、省略音、以及不同口音；並搭配新多益聽力測驗四大題型，奠定英語聽力理解能力。
+									</p>
+									<h3>單字閱讀養成</h3>
+									<p class="subject-slide">
+										以圖像加強記憶，透過「填空」與「聽寫」練習，協助考生分兩階段訓練聽力。同時補充並彙整同類字彙，一次就可以將相關單字學起來，有效豐富字彙量！
+									</p>
+									<h3>多益單字閱讀</h3>
+									<p class="subject-slide">
+										拋開死背單字的框架，將多益常見之單字與片語，活用於閱讀測驗三大題型的演練，培養快速掌握關鍵字的能力，不再恐懼多益長篇閱讀。
+									</p>
+									<h3>文法技巧</h3>
+									<p class="subject-slide">
+										針對句型、各種子句、動詞變化與時態、語氣、連接詞、介系詞等重要文法概念，以圖表方式簡化文法說明，搭配紮實多元的練習，逐步奠定文法概念。
+									</p>
+							</div>
+						</div>
+						<div class="sub-group col-lg-4">
+							<h1 class="subject-title">多益實戰系列</h1>
+							<div class="subject-list">
+									<h3>多益聽力/閱讀實戰A班</h3>
+									<p class="subject-slide">
+										分析聽力四大題型與閱讀三大題型之出題方向與考題重點，搭配點讀教材反覆練習四國口音，提高聽力反應速度。精闢解說閱讀測驗中之文法句型，加速拆解長篇閱讀之能力。
+									</p>
+									<h3>多益聽力/閱讀實戰B班</h3>
+									<p class="subject-slide">
+										地毯式解析多益聽力與閱讀各種題型之技巧。每章節再以仿真試題即時演練，讓課堂上老師傳授的技巧不再紙上談兵，幫你奪取更高分數。
+									</p>
+									<h3>多益真人大團班</h3>
+									<p class="subject-slide">真人老師講述聽力與閱讀解題技巧，課前皆可於線上觀看教材，隨時隨地進行複習，課後提供錄影檔方便複習與補課。無需舟車勞頓，在家就能輕鬆上課。
+									</p>
+							</div>
+						</div>
+						<div class="sub-group col-lg-4">
+							<h1 class="subject-title">多益衝刺模考系列</h1>
+							<div class="subject-list">
+									<h3>多益名師衝刺班</h3>
+									<p class="subject-slide">
+										由多益名師傳授解題秘技，解囊獨家字彙解析，能在短期間內迅速提升單字量，協助考生掌握衝刺關鍵時刻，在最短時間讓多益成功達標！
+									</p>
+									<h3>多益仿真模考＋線上解題</h3>
+									<p class="subject-slide">
+										每月一次，仿真模擬考試＋即時真人老師解題。幫助考生熟悉多益測驗模式，針對考試弱點進行重點分析，不斷累積多益考試實戰經驗。
+									</p>
+							</div>
+						</div>
+				</div>
+				
+
+				
+			</div>
+		</div>
+
+		<!-- tip -->
+		<div class="tip mb-20">
+			<div class="container">
+				<h2 class="title mt-60">多益考試技巧大公開
+				</h2>
+			  <ul class="tip-tab">
+			  	<li>閱讀測驗</li>
+			  	<li>聽力測驗</li>
+			  	<li>口說測驗</li>
+			  	<li>寫作測驗</li>
+			  </ul>
+			  <div class="tip-box">
+				  <ul class="tip-tab-box">
+				  	<li>
+				  		<h4>多益閱讀挑戰，來自於時間的限制</h4>
+				  		<hr>
+							<p>閱讀題型基本上可劃分為兩大類： 文法單字題以及閱讀。就第一大類文法單字題而言，除了掌握基本的單字量之外，必備的文法知識包含了對單字字首以及字尾的了解、時態的掌握、各類動詞形式的變化規則等等。由於閱讀部分每題平均作答時間只有四十五秒鐘，因此最大的挑戰來自於時間的限制。考生們一旦建立起這些文法知識後，需把重點擺在如何辨識各考題之文法考點，才能做到快速解題。<a>了解更多</a><br><br><span>除此之外，文法單字題內有一些常考的固定句型。建議考生們直接從考古題下手，題目做多了，自然而然能提升對句型的辨識能力，進而快速選出正解。<br><br>就第二大類的閱讀而言，得高分的關鍵在於提升閱讀速度以及對各類商業文書類型的熟悉度。為了培養前者，考生除了需多做短篇閱讀的訓練之外，還必須在閱讀解題技巧方面下功夫，包含辨識閱讀題目之題型以及快速尋找解題關鍵字等。另一方面而言，後者的準備則主要來自對格式的了解。若熟悉各類商業文書的格式，便能快速掌握各篇閱讀的重點，提升解題速度。</span></p>
+				  	</li
+				  	><li>
+				  		<h4>明明背過的單字，考TOEIC聽力時卻又聽不出來</h4>
+				  		<hr>
+							<p>大部分台灣學生在面對英語能力測驗時，往往側重於單字上的準備。但是每每聽力內容出現有背過的單字時，考生卻又聽不出來。其實單字量固然重要，但熟悉重點單字的發音其實是準備聽力不可或缺的關鍵之一。建議考生在背單字時，運用線上字典聽各個單字的發音，並隨之覆誦。如此一來，不但可增強對單字的記憶力，更同時奠定考生對該單字聽力與口說的掌握度。<a>了解更多</a><br><br><span>此外，聽力發音主要還是偏重於美式與英式發音。為了加強對英式發音的熟悉度，考生需多做聽力測驗考古題。<br><br>最後，聽力測驗考試內容諸多是商業場合的會話，對於平日工作較少接觸英語的在職考生以及尚未進入就業職場的學生來說是比較大的挑戰。在準備測驗期間，考生可透過關鍵字搜尋，多加利用線上英語教學之網路資源來加強對較為正式的聽力內容的掌握度。</span></p>
+				  	</li
+				  	><li>
+				  		<h4>多益口說考高分，必須養成開口的習慣</h4>
+				  		<hr>
+							<p>「口說測驗重點在於句子流暢度以及應答內容之準確度。建議考生在培養其他語言能力時，要養成開口的習慣，開口背誦單字或是開口朗讀。一來習慣英語發音，二來培養口條及自信。這兩個條件一旦建立起來後，口說測驗的印象分數理當十拿九穩。	<a>了解更多</a><br><br><span>此外，建議考生在練習口語時，養成以自己熟悉的單字來回答問題以及解釋自己意見的習慣，而不是一昧停下來查字典。唯有如此，才能真正提升未來在考試環境裡或是實際生活應用中的口語能力。<br><br>對大多數人而言，口說能力是四種語言能力中最難培養的一環。唯有持之以恆，練習，練習，再練習才能有所進步。</span></p>
+				  	</li
+				  	><li>
+				  		<h4>掌握多益基本寫作，提升閱讀速度</h4>
+				  		<hr>
+							<p>寫作也分成整合寫作與獨立寫作。整合寫作要注意不能用自己的觀點來發表感想。<br><br>雖然主流是聽力和閱讀兩大部份，但準備要考聽力以及閱讀的考生亦可透過對基本寫作的掌握，像是熟悉實體商業信件和電子郵件的稱謂敬語以及寫作格式等等，來提升閱讀速度，進而提升閱讀部分的得分。<a>了解更多</a><br><br><span>反之，對於實際上要考寫作測驗的考生來說，除了上述之外，首要之務便是練習將習得之文法知識融合到寫作裡。大部分人在學習第二外語時，最常忽略親自提筆造句的重要性。所以真正需要寫作時，寫出來的句子往往文法錯誤百出，得分自然低。<br><br>再者，考量到寫作測驗裡需做書面回覆以及陳述意見，考生需要了解正式書面回覆以及個人論述之寫作架構。透過模擬情境的寫作練習亦可達到腦力激盪、在短時間內快速產生論點的效果。</span> </p>
+				  	</li>
+				  </ul>
+			  </div>
+			  
+
+
+
+			</div>
+		</div>
+
+
+
+
+		<!-- contact -->
+		<div class="contact mt-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-12 mt-60 wow bounceInLeft">
+						<h1 class="mb-20">立即與我們聯絡，瞭解課程</h1>
+						<p>菁英陪伴每個決心改變的人，只要開始改變，人生就與眾不同<br>相信自己！相信菁英！陪你勇菁英！陪你勇菁英！陪你勇菁英！陪你勇菁英！陪你勇菁英！陪你勇敢踏出挑戰自己的第一步，創造屬於你的可能性！</p>
+					</div>
+					<div class="col-xl-6 col-12 wow bounceInRight">
+						<div class="item">
+							<div class="row">
+								<div class="col-3">
+									<div class="circle">
+										<i class="icon-calendar icon-size"></i>
+									</div>
+								</div>
+								<div class="col-9">
+									<h2 class="mb-10 mt-60">線上預約諮詢</h2>
+									<p class="mb-20">留下您的學習想法！<br>我們將於24小時內與您聯繫，共同規劃學習藍圖。</p>
+								</div>
+							</div>
+							<hr size="1px" align="center" width="100%">
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-3">
+										<div class="circle">
+											<i class="icon-phone icon-size"></i>
+										</div>
+								</div>
+								<div class="col-9">
+									<h2 class="mb-10 mt-30">線上預約諮詢</h2>
+									<p class="mb-20">留下您的學習想法！<br>我們將於24小時內與您聯繫，共同規劃學習藍圖。</p>
+								</div>
+							</div>
+							<hr size="1px" align="center" width="100%">
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-3">
+										<div class="circle">
+											<i class="icon-comment icon-size"></i>
+										</div>
+								</div>
+								<div class="col-9">
+									<h2 class="mb-10 mt-30">線上預約諮詢</h2>
+									<p class="mb-20">留下您的學習想法！<br>我們將於24小時內與您聯繫，共同規劃學習藍圖。</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer	 -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-12 mt-60 mb-20">
+						<div class="item">
+							<div class="row">
+								<div class="col-md-4">
+									<h2 class="mb-20">找到我們</h2>
+									<ul>
+										<li>台中市中華路中華街</li>
+										<li class="spacing">(04)26262626</li><br>
+									</ul>
+								</div>
+								<div class="col-md-8">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14547.558235782673!2d120.57671211977541!3d24.280587750000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1562809175545!5m2!1szh-TW!2stw" width="260" height="190" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col-xl-6 col-12 mt-60">
+						<div class="row">
+							<div class="col-6">
+								<div class="item">
+									<h2 class="mb-20">課程相關</h2>
+									<ul>
+										<li><a href="#">全民英檢</a></li>
+										<li><a href="#">托福</a></li>
+										<li><a href="#">雅思</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="item">
+									<h2 class="mb-20">教學相關</h2>
+									<ul>
+										<li><a href="#">數位學習</a></li>
+										<li><a href="#">學生排課系統</a></li>
+										<li><a href="#">課程規劃</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6 mt-60">
+								<div class="item">
+									<h2 class="mb-20">課程相關</h2>
+									<ul>
+										<li><a href="#">全民英檢</a></li>
+										<li><a href="#">托福</a></li>
+										<li><a href="#">雅思</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-6 mt-60">
+								<div class="item">
+									<h2 class="mb-20">教學相關</h2>
+									<ul>
+										<li><a href="#">數位學習</a></li>
+										<li><a href="#">學生排課系統</a></li>
+										<li><a href="#">課程規劃</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+					
+				</div>
+				<hr style="border: 0.5px solid #aaa">	
+				<p class="text-center mb-20">Copyright © 2019 by Education Services.</p>	
+			</div>
+
+		</footer>
+
+
+
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
