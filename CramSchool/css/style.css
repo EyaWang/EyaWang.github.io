@@ -213,7 +213,7 @@ a{
 	height: 100%;
 	background-color: #000;
 	opacity: 0.4;
-	box-shadow: 2px 2px 3px #000;
+	box-shadow: 2px 2px 8px #000;
 }
 .header{
 	height: 60px;
@@ -541,7 +541,7 @@ a{
 	padding: 15px 0;
 	text-align: center;
 	margin: 0;
-	border-radius: 5px 5px 0px 0px;
+
 }
 .subject h2{
 	text-align: center;
@@ -551,6 +551,24 @@ a{
 .subject h3{
 	cursor: pointer;
 	font-size: 22px;
+}
+.sub-box{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24);
+}
+.subject .subject-img{
+	width: 100%;
+	padding-top: 55%;
+	height: 0;
+	overflow: hidden;
+}
+.subject .subject-img img{
+	width: 100%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
 }
 .subject-list{
 	background-color: #fff;

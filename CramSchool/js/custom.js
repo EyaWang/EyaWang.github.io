@@ -37,9 +37,11 @@ $(function(){
 	$('.subject-slide').hide();
 	$('.subject-slide:first').show();
 	$('.subject-list h3').click(function(){
-		var a=$(".subject-list p").not($(this).next());
-		$(this).next('p').slideDown();
-		a.slideUp();	
+		
+		if ($(this).next('p').is(":hidden")) {
+			$(this).closest(".subject-list ").find('.subject-slide').slideUp();
+			$(this).next('p').slideDown();
+		}
 	})
 
     //tab

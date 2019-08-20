@@ -1,36 +1,47 @@
 $(function(){
-	//add項目
-	$('.add-box').hide();
-	$('.add').click(function(){
-		$('.add-box').show();
+	// 新增刪除按鈕
+	var counter=2
+	// 按新增按鈕
+	$("#add_btn").click(function(){		
+		addRow(counter);
+		counter+=1;
 	})
-	$('.add-inner input').focus(function(){
-		$(this).css('border-bottom', '1px solid #dd4b39');
-		$(this).prev().css('color', '#dd4b39');
-	})
-	$('.add-inner input').blur(function(){
-		$(this).css('border-bottom', '1px solid #555');
-		$(this).prev().css('color', '#555');
+	//按刪除按鈕
+	$(".delete-button").click(function(){
+		var tr=$(this).closest('tr');
+		var data_id=tr.data('id');
+		deleteRow(data_id);
 	})
 
 
-	// 旁邊選單展開
-	$('.aside-ul li> ul> li').hide();
-	$('.aside-ul li').click(function(){
-		$(this).find('li').slideToggle();
+	function addRow(index){
+		var tbody=$(".product-table").find("tbody");
+		var row=$(".tmp")[0];
+		var newRow=$(row).clone(true,true);
+		newRow.attr('data-id',index);
+		newRow.removeClass('tmp');
+		var productIdTd=newRow.find('.product-id');
+		productIdTd.html(index);
+		var trLength=$(tbody).find("tr")
+		if (trLength.length < 10) {
+			tbody.append(newRow);
+		}	
+		else{
+			counter-=1
+		}
+	}
+	function deleteRow(data_id){
+		var tbody=$(".product-table").find("tbody");
+		var str='tr[data-id='+data_id+']';
+		tr=tbody.find(str);
+		tr.remove();
+	}
 
-		
+
+	//二層選單
+	$(".fir-ul > li").click(function(){
+		$(this).next('ul').slideToggle();
 	})
 	
-	// $('.aside-ul li').click(function(){
-	// 	$(this).children('.rotate').css({'transform':'rotate(-90deg)','transition':'all 0.5s'});
-	// 	$(this).click(function(){
-	// 		$(this).children('.rotate').css({'transform':'rotate(0deg)','transition':'all 0.5s'});
-	// 	})
-		
-	// })
-	
-
 
 })
-
