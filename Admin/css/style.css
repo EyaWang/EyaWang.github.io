@@ -5,6 +5,7 @@ body{
 	font-family: '微軟正黑體';
 	width: 100%;
 	height: 100vh;
+	min-width: 1400px;
 }
 .container{
 	margin: 0 15px;
@@ -25,11 +26,8 @@ body{
 .bg-5th{
 	background-color: #57233a;
 }
-.ml-150{
-	margin-left: 150px;
-}
-.ml-300{
-	margin-left: 300px;
+.ml-70{
+	margin-left: 70px;
 }
 /*header----------------------------*/
 header{
@@ -54,6 +52,7 @@ header .bar-icon{
 
 	position: absolute;
 	top: 0;
+
 }
 header .fake-logo{
 	width: 250px;
@@ -96,6 +95,7 @@ aside{
 	left: 0;
 	width: 250px;
 	height: 100vh;
+	overflow: hidden;
 }
 aside .nav-logo{
 	width: 250px;
@@ -245,8 +245,12 @@ main .topBtn{
 	align-items: center;
 	display: flex;
 }
+main .topBtn > div{
+	display: inline-block;
+}
 main .topBtn form{
 	position: relative;
+	display: inline-block;
 }
 main .topBtn form input{
 	padding: 10px;
@@ -270,6 +274,14 @@ main .topBtn form button{
 main .topBtn form button i{
 	font-size: 20px;
 	color: #999;
+}
+main .topBtn .topBtn-left{
+	display: flex;
+	align-items: center;
+}
+main .topBtn .topBtn-right{
+	position: absolute;
+	right: 100px;
 }
 /*主要按鈕-共用*/
 .circle{	

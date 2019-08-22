@@ -92,39 +92,46 @@
 	</aside>
 	<main>
 		<section class="topBtn">
-			<div class="circle cir-50 bg-1th" id="add_btn">
-				<i class="fas fa-plus"></i>
+			<div class="topBtn-left">
+				<div class="circle cir-50 bg-1th" id="add_btn">
+					<i class="fas fa-plus"></i>
+				</div>
+				<div class="circle cir-40 bg-2th">
+					<i class="fas fa-pen"></i>
+				</div>
+				<div class="circle cir-40 bg-3th">
+					<i class="fas fa-angle-left"></i>
+				</div>
+				<div class="circle cir-40 bg-1th">
+					<i class="fas fa-angle-right"></i>
+				</div>
+				<div class="circle cir-40 bg-1th ml-70">
+					<i class="fas fa-align-center"></i>
+				</div>
 			</div>
-			<div class="circle cir-40 bg-2th">
-				<i class="fas fa-pen"></i>
+			<div class="topBtn-center">
+				<form action="#">
+					<input type="text" placeholder="Search...">
+					<button>
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
 			</div>
-			<div class="circle cir-40 bg-3th">
-				<i class="fas fa-angle-left"></i>
+			<div class="topBtn-right">
+				<div class="circle cir-40 bg-4th">
+					<i class="fas fa-trash"></i>
+				</div>
+				<div class="circle cir-40 bg-3th">
+					<i class="fas fa-sync-alt"></i>
+				</div>
+				<div class="circle cir-40 bg-5th">
+					<i class="fas fa-download"></i>
+				</div>	
 			</div>
-			<div class="circle cir-40 bg-1th">
-				<i class="fas fa-angle-right"></i>
-			</div>
-			<div class="circle cir-40 bg-1th ml-150">
-				<i class="fas fa-align-center"></i>
-			</div>
-			<form action="#">
-				<input type="text" placeholder="Search...">
-				<button>
-					<i class="fas fa-search"></i>
-				</button>
-			</form>
-			<div class="circle cir-40 bg-4th ml-300">
-				<i class="fas fa-trash"></i>
-			</div>
-			<div class="circle cir-40 bg-3th">
-				<i class="fas fa-sync-alt"></i>
-			</div>
-			<div class="circle cir-40 bg-5th">
-				<i class="fas fa-download"></i>
-			</div>	
+			
 		</section>
 		<!-- main table -->
-		<table class="product-table">
+		<table class="product-table" id="table">
 			<thead>
 				<tr>
 					<th>
@@ -139,11 +146,36 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr data-id="1">
 					<td>
 						<input type="checkbox">
 					</td>
 					<td class="product-id">1</td>
+					<td class="product-brand">
+						<input type="text" value="BMW">
+					</td>
+					<td class="product-chinese">
+						<input type="text" value="寶馬">
+					</td>
+					<td class="product-headquarters">
+						<input type="text" value="Germany (德國)">
+					</td>
+					<td class="product-company">
+						<input type="text" value="BMW Group">
+					</td>
+					<td>
+						<button class="delete-button" type="button">
+							<div class="circle cir-30 bg-4th">
+								<i class="fas fa-trash"></i>
+							</div>
+						</button>
+					</td>
+				</tr>
+				<tr data-id="2">
+					<td>
+						<input type="checkbox">
+					</td>
+					<td class="product-id">2</td>
 					<td class="product-brand">
 						<input type="text" value="BMW">
 					</td>
