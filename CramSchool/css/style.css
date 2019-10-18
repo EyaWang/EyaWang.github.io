@@ -467,7 +467,7 @@ a{
 	/*banner*/
 	.carousel-item .banner-text{
 		left: 100px;
-		top: 120px;
+		top: 150px;
 	}
 	.banner-text h5{
 		font-size: 50px;
@@ -491,7 +491,7 @@ a{
 @media (max-width:768px){
 	.carousel-item .banner-text{
 		left: 100px;
-		top: 100px;
+		top: 150px;
 	}
 	.banner-text h5{
 		font-size: 40px;
@@ -512,16 +512,14 @@ a{
 	/*banner*/
 	.carousel-item .banner-text{
 		left: 50px;
-		top: 40px;
+		top: 60px;
 	}
 	.banner-text h5{
 		font-size: 20px;
 		font-weight: 500;
 	}
 	.banner-text p{
-		width: 250px;
-		font-size: 12px;
-		margin-top: 5px;
+		display: none;
 	}
 	.banner-text a{
 		padding: 4px 10px;
