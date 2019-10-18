@@ -22,222 +22,172 @@
 			<i class="fas fa-bell"></i>
 		</div>
 	</header>
-	<aside>
-		<!-- 側邊攔 -->
-		<div class="aside-bar">
-			<div class="nav-logo">
-				<b>EYA </b>Admin
+	<section class="section-column">
+		<aside>
+			<!-- 側邊攔 -->
+			<div class="aside-bar">
+				<div class="nav-logo">
+					<b>EYA </b>Admin
+				</div>
+				<!-- user -->
+				<div class="user">
+					<div class="container">
+						<div class="user-img">
+							<img src="images/user.jpg" alt="">
+						</div>
+						<div class="user-name">
+							<b>Joyce Wang</b><br>
+							<span></span>Online
+						</div>
+						<form action="#">
+							<input type="text" placeholder="Search...">
+							<button>
+								<i class="fas fa-search"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- main-nav -->
+				<h6>MAIN NAVIGATION</h6>
+				<ul class="fir-ul">
+					<li><i class="fas fa-table"></i>Level</li>
+					<ul class="sec-ul">
+						<li>Level 1</li>
+						<li>Level 2</li>
+						<li>Level 3</li>
+						<li>Level 4</li>
+						<li>Level 5</li>
+						<li>Level 6</li>
+					</ul>
+					<li><i class="fas fa-table"></i>School</li>
+					<ul class="sec-ul">
+						<li>A</li>
+						<li>B</li>
+					</ul>
+					<li><i class="fas fa-table"></i>Company</li>
+					<li><i class="fas fa-table"></i>Group
+						<span class="bg-3th">new</span>
+					</li>
+					<li><i class="fas fa-table"></i>Price
+						<span class="bg-1th">12</span>
+					</li>
+				</ul>
+				<h6>LABELS</h6>
+				<ul class="fir-ul">
+					<li><i class="far fa-circle"></i>Total Sales</li>
+					<ul class="sec-ul">
+						<li>Line Graph</li>
+						<li>Bar Graph/Bar Chart</li>
+						<li>Pie Chart/Circle Graph</li>
+					</ul>
+					<li><i class="far fa-circle"></i>Revenue</li>
+					<ul class="sec-ul">
+						<li>Line Graph</li>
+						<li>Bar Graph/Bar Chart</li>
+						<li>Pie Chart/Circle Graph</li>
+					</ul>
+					<li><i class="far fa-circle"></i>Expenditure</li>
+					<li><i class="far fa-circle"></i>Price</li>
+					<li><i class="far fa-circle"></i>Stock Value</li>
+				</ul>
 			</div>
-			<!-- user -->
-			<div class="user">
-				<div class="container">
-					<div class="user-img">
-						<img src="images/user.jpg" alt="">
+		</aside>
+		<main>
+			<!-- main-btn -->
+			<section class="topBtn">
+				<!-- 增加 -->
+				<div class="topBtn-left">
+					<div class="circle cir-50 bg-3th" id="add_btn">
+						<i class="fas fa-plus"></i>
 					</div>
-					<div class="user-name">
-						<b>Joyce Wang</b><br>
-						<span></span>Online
+					<div class="circle cir-40 bg-1th ml-300">
+						<i class="fas fa-align-center"></i>
 					</div>
+				</div>
+				<!-- 篩選 -->
+				<div class="topBtn-center">
 					<form action="#">
+						<select name="" id="select">
+							<option value="1">編號</option>
+							<option value="2">學年</option>
+							<option value="3">姓名</option>
+							<option value="4">性別</option>
+							<option value="5">學校</option>
+							<option value="6">聯絡人</option>
+							<option value="7">聯絡電話</option>
+						</select>
 						<input type="text" placeholder="Search...">
 						<button>
 							<i class="fas fa-search"></i>
 						</button>
 					</form>
 				</div>
-			</div>
-			<!-- main-nav -->
-			<h6>MAIN NAVIGATION</h6>
-			<ul class="fir-ul">
-				<li><i class="fas fa-table"></i>Brand</li>
-				<ul class="sec-ul">
-					<li>BMW</li>
-					<li>Audi</li>
-					<li>Honda</li>
-				</ul>
-				<li><i class="fas fa-table"></i>Headquarters</li>
-				<ul class="sec-ul">
-					<li>Germany</li>
-					<li>Japan</li>
-				</ul>
-				<li><i class="fas fa-table"></i>Company</li>
-				<ul class="sec-ul">
-					<li>Volkswagen Group</li>
-					<li>Ford Motor Company</li>
-				</ul>
-				<li><i class="fas fa-table"></i>Group
-					<span class="bg-3th">new</span>
-				</li>
-				<li><i class="fas fa-table"></i>Price
-					<span class="bg-1th">12</span>
-				</li>
-			</ul>
-			<h6>LABELS</h6>
-			<ul class="fir-ul">
-				<li><i class="far fa-circle"></i>Total Sales</li>
-				<ul class="sec-ul">
-					<li>Line Graph</li>
-					<li>Bar Graph/Bar Chart</li>
-					<li>Pie Chart/Circle Graph</li>
-				</ul>
-				<li><i class="far fa-circle"></i>Revenue</li>
-				<ul class="sec-ul">
-					<li>Line Graph</li>
-					<li>Bar Graph/Bar Chart</li>
-					<li>Pie Chart/Circle Graph</li>
-				</ul>
-				<li><i class="far fa-circle"></i>Expenditure</li>
-				<li><i class="far fa-circle"></i>Price</li>
-				<li><i class="far fa-circle"></i>Stock Value</li>
-			</ul>
-		</div>
-	</aside>
-	<main>
-		<!-- main-btn -->
-		<section class="topBtn">
-			<div class="topBtn-left">
-				<div class="circle cir-50 bg-1th" id="add_btn">
-					<i class="fas fa-plus"></i>
+				<!-- 上下頁 -->
+				<div class="topBtn-right">		
+					<div class="circle cir-40 bg-6th back-btn">
+						<i class="fas fa-angle-left"></i>
+					</div>
+					<div class="circle cir-40 bg-6th next-btn">
+						<i class="fas fa-angle-right"></i>
+					</div>
 				</div>
-				<div class="circle cir-40 bg-2th">
-					<i class="fas fa-pen"></i>
-				</div>
-				<div class="circle cir-40 bg-3th">
-					<i class="fas fa-angle-left"></i>
-				</div>
-				<div class="circle cir-40 bg-1th">
-					<i class="fas fa-angle-right"></i>
-				</div>
-				<div class="circle cir-40 bg-1th ml-70">
-					<i class="fas fa-align-center"></i>
-				</div>
-			</div>
-			<div class="topBtn-center">
-				<form action="#">
-					<input type="text" placeholder="Search...">
-					<button>
-						<i class="fas fa-search"></i>
-					</button>
-				</form>
-			</div>
-			<div class="topBtn-right">
-				<div class="circle cir-40 bg-4th">
-					<i class="fas fa-trash"></i>
-				</div>
-				<div class="circle cir-40 bg-3th">
-					<i class="fas fa-sync-alt"></i>
-				</div>
-				<div class="circle cir-40 bg-5th">
-					<i class="fas fa-download"></i>
-				</div>	
-			</div>
-			
-		</section>
-		<!-- main table -->
-		<table class="product-table" id="table">
-			<thead>
-				<tr>
-					<th>
-						<input type="checkbox">
-					</th>
-					<th>Id</th>
-					<th>Brand</th>
-					<th>Chinese</th>
-					<th>Headquarters</th>
-					<th>Company</th>
-					<th>Delete</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr data-id="1">
-					<td>
-						<input type="checkbox">
-					</td>
-					<td class="product-id">1</td>
-					<td class="product-brand">
-						<input type="text" value="BMW">
-					</td>
-					<td class="product-chinese">
-						<input type="text" value="寶馬">
-					</td>
-					<td class="product-headquarters">
-						<input type="text" value="Germany (德國)">
-					</td>
-					<td class="product-company">
-						<input type="text" value="BMW Group">
-					</td>
-					<td>
-						<button class="delete-button" type="button">
-							<div class="circle cir-30 bg-4th">
-								<i class="fas fa-trash"></i>
-							</div>
-						</button>
-					</td>
-				</tr>
-				<tr data-id="2">
-					<td>
-						<input type="checkbox">
-					</td>
-					<td class="product-id">2</td>
-					<td class="product-brand">
-						<input type="text" value="BMW">
-					</td>
-					<td class="product-chinese">
-						<input type="text" value="寶馬">
-					</td>
-					<td class="product-headquarters">
-						<input type="text" value="Germany (德國)">
-					</td>
-					<td class="product-company">
-						<input type="text" value="BMW Group">
-					</td>
-					<td>
-						<button class="delete-button" type="button">
-							<div class="circle cir-30 bg-4th">
-								<i class="fas fa-trash"></i>
-							</div>
-						</button>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<p class="table-footer">Records 1-10 from 122
-			<label for="#page">Page:</label>
-			<input type="number" value="1" id="page">
-		</p>
-		<!-- clone table -->
-		<div style="display: none;">
-			<table>
-				<tbody>
-					<tr class="tmp">
-						<td>
-							<input type="checkbox">
-						</td>
-						<td class="product-id"></td>
-						<td class="product-brand">
-							<input type="text">
-						</td>
-						<td class="product-chinese">
-							<input type="text">
-						</td>
-						<td class="product-headquarters">
-							<input type="text">
-						</td>
-						<td class="product-company">
-							<input type="text">
-						</td>
-						<td>
-							<button class="delete-button" type="button">
-								<div class="circle cir-30 bg-4th">
-									<i class="fas fa-trash"></i>
-								</div>
-							</button>
-						</td>
+			</section>
+			<!-- main table -->
+			<table class="product-table" id="table">
+				<thead>
+					<tr>
+						<th>編號</th>
+						<th>學年</th>
+						<th>姓名</th>
+						<th>性別</th>
+						<th>學校</th>
+						<th>聯絡人</th>
+						<th>聯絡電話</th>
+						<th>Delete</th>
 					</tr>
+				</thead>
+				<tbody>
+
 				</tbody>
 			</table>
-		</div>
-	</main>
+			<!-- clone table -->
+			<div style="display: none;">
+				<table>
+					<tbody>
+						<tr class="tmp">
+							<td class="student-id">1</td>
+							<td class="student-year">
+								<input type="text">
+							</td>
+							<td class="student-name">
+								<input type="text">
+							</td>
+							<td class="student-sex">
+								<input type="text">
+							</td>
+							<td class="student-school">
+								<input type="text">
+							</td>
+							<td class="Contact-person">
+								<input type="text">
+							</td>
+							<td class="Contact-number">
+								<input type="text">
+							</td>
+							<td class="deleteBtn">
+								<button class="delete-button" type="button">
+									<div class="circle cir-30 bg-4th">
+										<i class="fas fa-trash"></i>
+									</div>
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+	</section>
+		
 		
 </body>
 </html>

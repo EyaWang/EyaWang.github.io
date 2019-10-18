@@ -528,8 +528,36 @@ a{
 		font-size: 12px;
 	}
 }
-
-
+/*goal*/
+.goal{
+	width: 100%;
+}
+.goal h2{
+	text-align: center;
+}
+.goal ul{
+	text-align: center;
+}
+.goal ul li{
+	display: inline-block;
+	margin: 10px;
+}
+.goal ul li a{
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #999;
+	background-color: #eee;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+.goal ul li a:hover{
+	background-color: #FFAA33;
+}
+@media (max-width:576px){
+	.goal ul li{
+		width: 50%;
+	}
+}
 /*subject*/
 .subject{
 	background-color: #eee;
@@ -554,6 +582,7 @@ a{
 }
 .sub-box{
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24);
+	margin: 0;
 }
 .subject .subject-img{
 	width: 100%;
@@ -618,121 +647,7 @@ a{
 		height: 240px;
 	}
 }
- 
-/*tip*/
-.tip .title{
-	text-align: center;
-}
-.tip .tip-tab{
-	text-align: center;
-	margin:20px;
-}
-.tip .tip-tab li{
-	display: inline-block;
-	padding: 10px 20px;
-	background-color: #245678;
-	border-radius: 5px;
-	margin: 5px;
-	color: #fff;
-	cursor: pointer;
-}
-.tip-tab-color-active{
-	background-color: #1565C0;
-}
-.tip-tab-color-remove{
-	background-color: #245678;
-}
-.tip .tip-box{
-	width: 1000px;
-	height: 400px;
-	overflow: hidden;
-	margin: auto;
-	border: 1px solid #245678;
 
-	border-radius: 5px;
-}
-
-.tip-tab-box h4{
-	color: #245678;
-}
-.tip .tip-tab-box li{
-	width: 1000px;
-	height: 400px;
-	vertical-align:text-top;
-	padding: 20px 30px;
-	background-color: #fff;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.tip-tab-box a{
-	display: none;
-}
-.tip .tip-tab-box li:nth-child(1){
-	z-index: 50;
-}
-.tip .tip-tab-box li:nth-child(2){
-	z-index: 49;
-}
-.tip .tip-tab-box li:nth-child(3){
-	z-index: 49;
-}
-.tip .tip-tab-box li:nth-child(4){
-	z-index: 49;
-}
-@media (max-width:1200px){
-	.tip .tip-box{
-		width: 800px;
-		height: 400px;
-	}
-	.tip .tip-tab-box li{
-		width: 800px;
-		height: 400px;
-	}
-}
-@media (max-width:1200px){
-	.tip .tip-box{
-		width: 700px;
-		height: 450px;
-	}
-	.tip .tip-tab-box li{
-		width: 700px;
-		height: 450px;
-	}
-}
-@media (max-width:576px){
-	.tip .tip-box{
-		width: 340px;
-		height: 300px;
-	}
-	.tip .tip-tab-box li{
-		width: 340px;
-		height: 300px;
-	}
-	.tip-tab-box h4{
-		font-size: 18px;
-	}
-	.tip-tab-box p{
-		font-size: 12px;
-	}
-	.tip .tip-tab li{
-		padding: 5px 10px;
-		font-size: 12px;
-		margin: 2px;
-	}
-	.tip .tip-tab{
-		margin: 0px;
-		margin-bottom: 10px;
-	}
-	.tip-tab-box span{
-		display: none;
-	}
-	.tip-box .tip-tab-box p a{
-		display: inline-block;
-		color: #777;
-	}
-}
 /*intro*/
 .intro{
 	margin-top: 20px;
@@ -751,7 +666,7 @@ a{
 	transform: translate(-50%,-50%);
 }
 .time > div{
-	margin: 30px 5px;
+	margin: 30px 0px;
 }
 .time .time-bigtitle{
 	color: grey;
@@ -761,7 +676,7 @@ a{
 }
 .time .time-btn{
 	display: block;
-	padding: 10px 20px;
+	padding: 10px 0px;
 	background-color: #FFAA33;
 	color: #fff;
 	cursor: pointer;
@@ -802,7 +717,7 @@ a{
 }
 @media (min-width: 1200px){
 	.intro .time-img{
-		height: 150px;
+		height: 200px;
 	}
 }
 .intro .title{
@@ -811,10 +726,12 @@ a{
 }
 .intro .time-note{
 	display: inline-block;
+	padding: 0 10px;
 	height: 150px;
+	font-size: 16px;
 	text-align: justify;
 	text-justify:inter-ideograph;
-	line-height: 26px;
+	line-height: 28px;
 	text-overflow: ellipsis;
 	overflow:hidden; 
 }

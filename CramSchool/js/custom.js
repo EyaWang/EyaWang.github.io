@@ -44,26 +44,7 @@ $(function(){
 		}
 	})
 
-    //tab
-
-	$('.tip-tab li:eq(0)').css('background-color','#1565C0');
-	$('.tip-tab li:eq(0)').click(function(){
-		$('.tip-tab-box li:eq(0)').css('z-index','51').siblings().css('z-index','49');
-		$(this).css('background-color','#1565C0').siblings().css('background-color','#245678');
-	})
-	$('.tip-tab li:eq(1)').click(function(){
-		$('.tip-tab-box li:eq(1)').css('z-index','51').siblings().css('z-index','49');
-		$(this).css('background-color','#1565C0').siblings().css('background-color','#245678');
-	})
-	$('.tip-tab li:eq(2)').click(function(){
-		$('.tip-tab-box li:eq(2)').css('z-index','51').siblings().css('z-index','49');
-		$(this).css('background-color','#1565C0').siblings().css('background-color','#245678');
-	})
-	$('.tip-tab li:eq(3)').click(function(){
-		$('.tip-tab-box li:eq(3)').css('z-index','51').siblings().css('z-index','49');
-		$(this).css('background-color','#1565C0').siblings().css('background-color','#245678');
-	})
-
+   
 
 	//漢堡表單
 	$('.pop-up').click(function(){
@@ -72,6 +53,16 @@ $(function(){
 	$('.cancel').click(function(){
 		$('.pop-screen').hide();
 	})
+
+	//goal
+
+	$('.goal a[href]').click(function() {
+        var target = $(this.hash);
+        $('html,body').animate({
+        	scrollTop: (target.offset().top)-100
+        }, 1000);
+        return false;
+    });
 
 })	
 

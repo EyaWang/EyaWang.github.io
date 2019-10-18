@@ -3,8 +3,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: '微軟正黑體';
-	width: 100%;
-	height: 100vh;
+	height: 100%;
 	min-width: 1400px;
 }
 .container{
@@ -26,13 +25,18 @@ body{
 .bg-5th{
 	background-color: #57233a;
 }
-.ml-70{
-	margin-left: 70px;
+.bg-6th{
+	background-color: #999;
+}
+.ml-300{
+	margin-left: 300px;
 }
 /*header----------------------------*/
 header{
 	height: 60px;
 	background-color: #14B09B;
+	position: relative;
+	min-width: 1900px;
 }
 header div{
 	display: inline-block;
@@ -88,14 +92,17 @@ header .user .user-name:hover{
 	color: #f39c12;
 }
 /*aside-----------------------------*/
+.section-column{
+	display: flex;
+    width: 250px;
+    align-items: stretch;
+}
 /*user------------*/
 aside{
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 250px;
-	height: 100vh;
-	overflow: hidden;
+	margin-top: -60px;
+	z-index: 100;
+	min-height: 1000px;
 }
 aside .nav-logo{
 	width: 250px;
@@ -108,7 +115,7 @@ aside .nav-logo{
 }
 .aside-bar{
 	width: 250px;
-	height: 100vh;
+	height: 100%;
 	background-color: #295651;
 }
 .aside-bar .user .user-img{
@@ -234,13 +241,13 @@ aside .nav-logo{
 
 /*main------------------------------*/
 main{
-	padding-left: 250px;
 	max-width: 100%;
+	margin: 0 auto;
+	padding-left: 30px;
 }
 /*主要按鈕***********/
 main .topBtn{
-	margin: 20px;
-	margin-left: 100px;
+	margin: 10px;
 	position: relative;
 	align-items: center;
 	display: flex;
@@ -250,10 +257,14 @@ main .topBtn > div{
 }
 main .topBtn form{
 	position: relative;
-	display: inline-block;
+	display: flex;
+}
+main .topBtn form select{
+	padding-left: 10px;
 }
 main .topBtn form input{
 	padding: 10px;
+	margin-left: 20px;
 	border:none;
 	border-bottom: 1px solid #999;
 	outline: none;
@@ -280,8 +291,8 @@ main .topBtn .topBtn-left{
 	align-items: center;
 }
 main .topBtn .topBtn-right{
-	position: absolute;
-	right: 100px;
+	display: flex;
+	margin-left: 500px;
 }
 /*主要按鈕-共用*/
 .circle{	
@@ -316,11 +327,12 @@ main .topBtn .topBtn-right{
 .product-table{
 	border-collapse: collapse;
 	border: none;
-	width: 100%;
+	width: 1600px;
+	margin:0 auto;
 }
 .product-table th{
 	text-align: left;
-	font-size: 16px;
+	font-size: 18px;
 	padding: 5px;
 	border: 1px solid #ccc;
 }
@@ -328,22 +340,25 @@ main .topBtn .topBtn-right{
 	width: 5%;
 }
 .product-table th:nth-child(2){
-	width: 5%;
+	width: 10%;
 }
 .product-table th:nth-child(3){
-	width: 15%;
+	width: 10%;
 }
 .product-table th:nth-child(4){
-	width: 15%;
+	width: 10%;
 }
 .product-table th:nth-child(5){
 	width: 20%;
 }
 .product-table th:nth-child(6){
-	width: 15%;
+	width: 10%;
 }
 .product-table th:nth-child(7){
-	width: 5%;
+	width: 20%;
+}
+.product-table th:nth-child(8){
+	width: 15%;
 }
 .product-table td{
 	border: 1px solid #ccc;
