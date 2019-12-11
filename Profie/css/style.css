@@ -1,0 +1,179 @@
+*{
+	font-family: '微軟正黑體';
+	color: #000;
+	position: relative;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+.wrapper{
+	min-width: 1600px;
+	background-color: #e95026;
+}
+.wrapper>.container{
+	margin-left: 230px;
+}
+.line-group{
+	position: relative;
+}
+.circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+}
+.line{
+	width: 1000px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	top: 5px;
+}
+.ml120{
+	margin-left: 120px;
+}
+.ml500{
+	margin-left: 500px;
+}
+.mb50{
+	margin-top: -60px;
+}
+.mt100{
+	margin-top: 100px;
+}
+/*---------------------------*/
+.intro{
+	padding: 100px;
+}
+.intro h2{
+	font-size: 20px;
+	font-weight: 600;
+}
+.intro span{
+	font-size: 30px;
+	font-weight: 600;
+	padding-left: 15px;
+	line-height: 30px;
+	display: block;
+	width: 500px;
+}
+.intro .line-group p{
+	font-size: 100px;
+	color: #f2dbc2;
+	font-weight: 600;
+
+}
+.intro .line-group span{
+	font-size: 100px;
+	color: #f2dbc2;
+	padding-left: 100px;
+	line-height: 30px;
+}
+.intro .title{
+	position: absolute;
+	top: -90px;
+	left: 80px;
+}
+.about p{
+	width: 530px;
+	font-weight: 700;
+	font-size: 16px;
+	position: absolute;
+	top: 30px;
+	left: 300px;
+}
+.more{
+	padding: 120px;
+}
+.more .line{
+	width: 150%;
+}
+.more p{
+	font-size: 20px;
+	position: absolute;
+	top: -30px;
+	left: 10px;
+	font-weight: 600;
+	color: #f7cea7;
+}
+.more img{
+	left: 100px;
+	top: 100px;
+}
+.more .button{
+	width: 100%;
+	right: 0;
+}
+.more .button span{
+	font-size: 30px;
+	color: #292929;
+	cursor: pointer;
+	font-weight: 600;
+	right: -300px;
+	position: absolute;
+	transition: all 0.3s;
+}
+.more .button span:hover{
+	color: #b9b9b9;
+}
+.more .button span:after{
+	content: "";
+	width: 100px;
+	height: 1px;
+	background-color: #000;
+	transition: all 0.3s;
+
+	position: absolute;
+	top: 40px;
+	left: 10px;
+}
+.more .button span:hover:after{
+	background-color: #b9b9b9;
+	left: 20px;
+}
+.more .button.prev-button span{
+	left: 0;
+	width: 100px;
+}
+.more .screen{
+	width: 900px;
+	height: 700px;
+	overflow: hidden;
+
+	position: relative;
+	top: 50px;
+	left: 200px;
+}
+.more .screen img{
+	top: 0;
+	left: 0;
+}
+.more .view{
+	position: absolute;
+	bottom: -20px;
+	left: 60%;
+	z-index: 100;
+}
+.more .view a{
+	width: 150px;
+	height: 36px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 30px;
+	background-color: #32407b;
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s;
+}
+.more .view a:hover{
+	background-color: #46b5d1;
+}
