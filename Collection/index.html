@@ -2,113 +2,140 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Joyce Wang</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="wrapper">
+	<section class="skill">
 		<div class="container">
-			<div class="intro">
-				<div class="container">
-					<h2>DESIGNER</h2>
-					<span>王怡雅</span>
-					<div class="line-group ml120 mb50">
-						<div class="circle"></div>
-						<div class="line"></div>
-						<div class="title">
-							<p>網頁<br></p>
-							<span>設計師</span>
-						</div>
+			<h1>SKILL</h1>
+			<div class="row">
+				<div class="draw_item">
+					<div class="draw_img">
+						<img src="image/picture.png" class="fullscreen" alt="">
 					</div>
-					
-				</div>	
-			</div>
-
-			<div class="about mt100 ml500">
-				<div class="container">
-					<img src="image/joyce_03.png" alt="">
-					<p>
-						曾獨自負責平面DM設計與年曆製作<br>
-						因喜愛設計從服務業與補教業轉職往網頁設計學習，養成獨立思考的能力,
-						並同時具有設計師與工程師思維，目前已有前端工程HTML.CSS.JAVASCRIPT與網頁設計PHOTOSHOP.ILLUSTRATOR獨自建置網頁介面能力,期待未來能在實務經驗中成為獨當一面的網頁設計師。
-					</p>
+					<h2>繪圖軟體</h2>
+					<ul class="skill_list">
+						<li>PhotoShop</li>
+						<li>Illustrator</li>
+						<li>Adobe XD</li>
+					</ul>
+				</div>
+				<div class="draw_item">
+					<div class="draw_img pink">
+						<img src="image/web-design.png" alt="">
+					</div>
+					<h2>原型工具</h2>
+					<ul class="skill_list">
+						<li>Balsamiq Mockups</li>
+					</ul>
+				</div>
+				<div class="draw_item">
+					<div class="draw_img">
+						<img src="image/data (2).png" alt="">
+					</div>
+					<h2>前端工程</h2>
+					<ul class="skill_list">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JQuery</li>
+						<li>Javascript</li>
+						<li>Bootstrap</li>
+						<li>RWD</li>
+					</ul>
 				</div>
 			</div>
-
-			<div class="skill mt100">
-				<div class="container">
-					<img src="image/joyce_07.png" alt="">
-				</div>
-			</div>
-
-			<div class="project mt100">
-				<div class="container">
-					<img src="image/joyce_11.png" alt="">
-				</div>
-			</div>
-
-			<div class="more">
-				<div class="container">
-					<div class="line-group ml120 mb50">
-						<div class="circle"></div>
-						<div class="line"></div>
-						<p>More</p>
-					</div>
-					<div class="view"><a href="https://eyawang.github.io/CramSchool/">View</a></div>
-					<div class="screen">
-						<img src="image/allpro.png" alt="">
-					</div>
-					<div class="button prev-button">
-						<span>PREV</span>
-					</div>
-					<div class="button next-button">
-						<span>NEXT</span>
-					</div>
-				</div>
-					
-			</div>
+				
 		</div>
 			
+	</section>
+	<section class="work">
+		<div class="container">
+			<h1>WORK</h1>
+			<div class="row">
+				<a href="web/movie.html" target="_blank">
+					<div class="work_item">
+						<div class="work_img">
+							<img src="image/movie/首頁.png" alt="">
+						</div>
+						<div class="work_title"><span>網頁設計</span></div>
+					</div>
+				</a>
+				<a href="web/pasta.html" target="_blank">
+					<div class="work_item">
+						<div class="work_img">
+							<img src="image/工作區域 1.png" class="pc" alt="">
+						</div>
+						<div class="work_title"><span>網頁設計練習</span></div>
+					</div>
+				</a>
+				<a href="web/bag.html" target="_blank">
+					<div class="work_item">
+						<div class="work_img">
+							<img src="image/bag/homepage.png" class="pc" alt="">
+						</div>
+						<div class="work_title"><span>網頁設計練習</span></div>
+					</div>
+				</a>
+			</div>
 
-	</div>
-		
-	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<script>
-		$(function(){
-			var screenImg=$('.screen img');
-			var left=0;
-			$('.view a').hide();
-			$('.next-button span').click(function(){
-				left-=900;
-				if (left<-5400) {
-					left=-5400;
-				}else{
-					screenImg.animate({left:left+'px'});
-					if(left==-3600){
-						$('.view a').fadeIn(1000);
-					}else{
-						$('.view a').hide();
-					}
-				}
-			})
-			$('.prev-button span').click(function(){
-				left+=900;
-				if (left>0) {
-					left=0;
-				}else{
-					screenImg.animate({left:left+'px'});
-					if(left==-3600){
-						$('.view a').fadeIn(1000);
-					}else{
-						$('.view a').hide();
-					}
-				}
-			})
+			<div class="row">
+				<a href="web/ticket.html" target="_blank">
+					<div class="work_item color1">
+						<div class="work_img">
+							<img src="image/iPhone 6-7-8 – 1.png" class="phone" alt="">
+						</div>
+						<div class="work_title"><span>App設計練習</span></div>
+					</div>
+				</a>					
+				<a href="web/workout.html" target="_blank">
+					<div class="work_item">
+						<div class="work_img">
+							<img src="image/workout/1-0-2_Diary_Play Delete.png" class="phone" alt="">
+						</div>
+						<div class="work_title"><span>App設計練習</span></div>
+					</div>
+				</a>					
+				<a href="https://eyawang.github.io/CramSchool/" target="_blank">
+					<div class="work_item">
+						<div class="work_img">
+							<img src="image/code1.JPG" class="pc" alt="">			
+						</div>
+						<div class="work_title"><span>前端工程</span></div>	
+					</div>
+				</a>
+			</div>
 
-		})
-	</script>
+			<div class="row">
+				<a href="https://eyawang.github.io/Admin/" target="_blank">
+					<div class="work_item">
+						<div class="work_img">
+							<img src="image/admin.JPG" class="pc" alt="">
+						</div>
+						<div class="work_title"><span>前端工程</span></div>
+					</div>
+				</a>
+				<a href="web/calendar.html" target="_blank">
+					<div class="work_item color3">
+						<div class="work_img">
+							<img src="image/DM/Calendar1.jpg" class="phone" alt="">
+							<img src="image/DM/Calendar2.jpg" class="phone" alt="">
+						</div>
+						<div class="work_title"><span>年曆</span></div>
+					</div>
+				</a>
+				<a href="web/dm.html" target="_blank">
+					<div class="work_item color2">
+						<div class="work_img">
+							<img src="image/DM/poster2.jpg" alt="">
+						</div>
+						<div class="work_title"><span>DM</span></div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
