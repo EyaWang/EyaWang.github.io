@@ -45,6 +45,9 @@ li{
 .mt100{
 	margin-top: 100px;
 }
+.mt120{
+	margin-top: 120px;
+}
 /*---------------------------*/
 .intro{
 	padding: 100px;
@@ -81,10 +84,11 @@ li{
 .about p{
 	width: 530px;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 18px;
 	position: absolute;
 	top: 30px;
 	left: 300px;
+	color: #fff;
 }
 .more{
 	padding: 120px;
@@ -98,7 +102,7 @@ li{
 	top: -30px;
 	left: 10px;
 	font-weight: 600;
-	color: #f7cea7;
+	color: #fff;
 }
 .more img{
 	left: 100px;
