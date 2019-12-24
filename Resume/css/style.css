@@ -11,7 +11,7 @@ li{
 }
 .wrapper{
 	min-width: 1600px;
-	background-color: #e95026;
+	background-color: #c8a46d;
 }
 .wrapper>.container{
 	margin-left: 230px;
@@ -36,8 +36,8 @@ li{
 .ml120{
 	margin-left: 120px;
 }
-.ml500{
-	margin-left: 500px;
+.ml400{
+	margin-left: 400px;
 }
 .mb50{
 	margin-top: -60px;
@@ -55,6 +55,7 @@ li{
 .intro h2{
 	font-size: 20px;
 	font-weight: 600;
+	color: #756346;
 }
 .intro span{
 	font-size: 30px;
@@ -63,16 +64,17 @@ li{
 	line-height: 30px;
 	display: block;
 	width: 500px;
+	color: #756346;
 }
 .intro .line-group p{
 	font-size: 100px;
-	color: #f2dbc2;
+	color: #fff;
 	font-weight: 600;
 
 }
 .intro .line-group span{
 	font-size: 100px;
-	color: #f2dbc2;
+	color: #fff;
 	padding-left: 100px;
 	line-height: 30px;
 }
@@ -83,12 +85,21 @@ li{
 }
 .about p{
 	width: 530px;
-	font-weight: 700;
-	font-size: 18px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 26px;
 	position: absolute;
 	top: 30px;
-	left: 300px;
-	color: #fff;
+	left: 400px;
+	color: #333;
+}
+.skill{
+	margin-left: -200px;
+	margin-top: 120px;
+}
+.project{
+	margin-left: -50px;
+	margin-top: 100px;
 }
 .more{
 	padding: 120px;
@@ -102,7 +113,7 @@ li{
 	top: -30px;
 	left: 10px;
 	font-weight: 600;
-	color: #fff;
+	color: #f2dbc2;
 }
 .more img{
 	left: 100px;
