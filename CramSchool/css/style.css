@@ -433,7 +433,8 @@ a{
 }
 .banner-text{
 	position: absolute;
-	left: 1000px;
+	left: 900px;
+	right: 200px;
 	top: 200px;
 	text-align: left;
 }
